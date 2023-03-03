@@ -1,0 +1,206 @@
+/* home : 6464E0 
+ bgc : #111827
+ 
+ h1 h2  #FFFFFF
+ 
+ h2.devloper C5C559
+ 
+ underline: 0000FF*/
+
+
+
+ *{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    color: #fff;
+ }
+ body{
+    /* width: 100vw; */
+    background-color: #111827;
+ }
+
+ /* --------------------nav bar --------------- */
+ .nav-bar ul{
+
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    list-style: none;
+    justify-content: end;
+    align-items: center;
+    margin-top: 5vh;
+    margin-right: 5vh;
+
+ }
+ img[alt=hambrger]{
+   display: none;
+ }
+ .nav-bar button{
+    height: 40px;
+    width: 100px;
+    background-color: #6464E0;
+   font-size: 20px;
+    border-radius: 25px;
+    
+ }
+
+ 
+
+/* --------------------main section----------------- */
+
+.main-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding-bottom: 1.5rem;
+    
+}
+
+.waving-hand{
+   height: 2.8em;
+   display: inline; 
+
+}
+.right-main img{
+   height: 500px;
+}
+main span{
+   font-size: 2.8rem;
+}
+
+main h1{
+   font-size: 4.0rem;
+}
+main h2{
+   font-size: 2.5rem;
+   color: #C5C559;
+}
+
+/* -----------<!-- projects-section -->-------------- */
+
+.projects-section{
+   margin: 2rem;
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   flex-direction: column;
+
+   
+
+}
+section .projects-image{
+   margin: 1.5rem;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+
+section img{
+   height: 300px;
+}
+.left-main{
+   padding-right: 2rem;
+}
+section span{
+   
+   padding: 0.5rem;
+   text-align: center;
+   border-bottom: 10px solid #0000FF ;  
+   border-radius: 15px;
+    margin-left: 45vw;
+   font-size: xx-large;
+   
+   
+}
+p{
+   text-align: center;
+}
+
+
+
+/* ---------footer section--------- */
+
+.footer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+.footer div img{
+   height: 2rem;
+   margin-top: 2rem;
+   margin-left: 0.5rem;
+
+}
+
+footer div span{
+   padding: 0.5rem;
+   text-align: center;
+   border-bottom: 10px solid #0000FF ;  
+   border-radius: 15px ;
+
+   
+   font-size: xx-large;
+}
+
+
+@media screen and (max-width: 768px) {
+   .nav-bar{
+      position: relative;
+   }
+
+   .nav-bar ul{
+      display: none;
+   }
+
+   img[alt=hambrger]{
+      display: block;
+      height: 3.5rem;
+      padding: 10px;
+   
+   }
+   img[alt=waving-hand]{
+      height: 2.5rem;
+      display: block;
+      margin-left: 15vw;
+   }
+
+   .main-section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   img[alt=pc-image]{
+      width: 100%;
+   }
+   div h1{
+      font-size: 2rem;
+   }
+   .developer{font-size: 1.2rem;
+      padding-left: 35px;
+   }
+   
+   .projects-section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* align-items: center; */
+   }
+   .projects-image{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   section span{
+      margin-left: 35vw;
+   }
+   
+   
+}
